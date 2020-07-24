@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <!--Bootstrap pulse theme-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/pulse/bootstrap.min.css">
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a href="/" class="navbar-brand">
+                <h1>Movie CRUD</h1>
+            </a>
+        </nav>
+    </header>
+
+    <!--Main container-->
+    <main>
+        <section class="container">
+            <div id="app" class="row pt-5">
+                <div class="col-md-4">
+                    
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Add a Movie</h4>
+                        </div>
+                        <form id="product-form" class="card-body">
+                            <div class="form-group">
+                                <input type="text" id="name"  maxlength="30" placeholder="Movie name" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input type="number" id="price" min="1" max="10" placeholder="Rate" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input type="number" id="year" min="1900" max="2020" placeholder="Movie year" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="description"  maxlength="256" placeholder="Movie description" class="form-control">
+                            </div>
+                            <input type="submit" value="Add Movie" class="btn btn-primary btn-block">
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-8">
+                </div>
+            </div>
+
+        </section>
+    </main>
+</body>
+</html>
